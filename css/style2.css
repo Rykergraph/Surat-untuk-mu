@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    black,
+    #38073b,
+    #5d92a5,
+    #ba90ff,
+    #ffffff
+  );
+  font-family: "Acme", sans-serif;
+}
+
+.paralax {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  padding: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.paralax::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #c3c1c1, transparent);
+  z-index: 1000;
+}
+.paralax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#text {
+  position: absolute;
+  font-size: 4.8em;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 3px 3px 10px grey;
+  bottom: 100px;
+}
+.paralax img#meteorid {
+  z-index: 100;
+}
+
+#button {
+  position: absolute;
+  font-size: 1em;
+  color: black;
+  background-color: rgb(49, 43, 43);
+  padding: 10px 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  transform: translateY(100px);
+  bottom: -100px;
+}
+/* .description {
+  position: relative;
+  padding: 10em;
+  background-color: #c3c1c1;
+  color: rgb(249, 222, 222);
+  text-shadow: 0 0 11px rgb(218, 4, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+.description p {
+  font-size: 1.1em;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #737d73;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 67%;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  background-color: #737d73;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 2%;
+  margin-top: 0.2%;
+}
+
+.button2:hover {
+  background-color: #3e8e41;
+}
+
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media screen and (min-width: 360px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: linear-gradient(to bottom, yellow);
+    font-family: "Acme", sans-serif;
+  }
+
+  .sunflower {
+    margin-right: 40px;
+  }
+
+  .paralax {
+    position: relative;
+    width: 300px;
+    height: 150vh;
+    padding: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    overflow: hidden;
+  }
+
+  .description {
+    position: relative;
+    background-color: #c3c1c1;
+    color: rgb(249, 222, 222);
+    text-shadow: 0 0 11px rgb(218, 4, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .tulisan p {
+    font-size: 16px;
+    text-shadow: 0 0 11px rgb(0, 7, 218);
+  }
+  .wallpaper {
+    text-shadow: 0 0 11px rgb(255, 4, 0);
+  }
+}
+
+/* @media screen and (min-width: 550px) {
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+      to bottom,
+      black,
+      #38073b,
+      #5d92a5,
+      #ba90ff,
+      #ffffff
+    );
+    font-family: "Acme", sans-serif;
+  }
+
+  .paralax {
+    position: relative;
+    width: 768px;
+    height: 150vh;
+    padding: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .description {
+    position: relative;
+    padding: 300px;
+    background-color: #c3c1c1;
+    color: rgb(249, 222, 222);
+    text-shadow: 0 0 11px rgb(218, 4, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+} */
